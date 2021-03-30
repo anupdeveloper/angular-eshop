@@ -1,0 +1,24 @@
+
+<div *ngFor="let i of products">
+  <div class="col-md-3 top_brand_left">
+              <div class="hover14 column">
+                  <div class="agile_top_brand_left_grid">
+                      <div class="tag"><img src="/assets/images/tag.png" alt=" " class="img-responsive" /></div>
+                      <div class="agile_top_brand_left_grid1">
+                          <figure>
+                              <div class="snipcart-item block" >
+                                  <div class="snipcart-thumb">
+                                      <a href="single.html"><img title=" " alt=" " src="/assets/images/1.png" /></a>		
+                                      <p>{{ i.name }}</p>
+                                      <h4>{{ i.price | currency:"INR"  }} <span>$10.00</span></h4>
+                                  </div>
+                                  <div class="snipcart-details top_brand_home_details">
+                                    <button type="button" (click)="_addItemToCart(i.id,1)" class="btn btn-sm btn-primary">Add to Cart</button>
+                                  </div>
+                              </div>
+                          </figure>
+                      </div>
+                  </div>
+              </div>
+          </div>
+</div>

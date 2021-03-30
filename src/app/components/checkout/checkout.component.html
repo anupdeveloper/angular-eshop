@@ -1,0 +1,7 @@
+<div class="container mt5">
+    <h2>Order Details</h2>
+    <div>Total Amount: <b>{{ totalAmt | currency:"INR"}}</b></div>
+
+    <button (click)="pay(totalAmt)" class="btn btn-primary" >Pay Now</button>
+   
+</div>
