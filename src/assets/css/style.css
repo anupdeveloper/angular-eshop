@@ -4835,3 +4835,7 @@ input.checkbox:checked:after {
     margin: .35em 0 0;
     background: url(../images/cart.png) no-repeat 116px 9px;
 }
+
+img.product-img {
+    width: 55%;
+}
